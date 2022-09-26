@@ -4,15 +4,76 @@
 }
 
 header {
-background-color: aqua;
-color: blue;
+background-color:aquamarine;
 }
 
-header i {
- color: red;
- font-size: 300px;
+html {
+    font-family: Montserrat;
 }
 
 .logos {
-    width: 100vh;
+    display: flex;
+    padding-top: 20px;
 }
+.logos a {
+    color: blueviolet;
+    font-size: 100px;
+    width: 100%;
+    text-align: center;
+}
+
+nav ul{
+    display: flex;
+    align-items: flex-end;
+}
+
+nav ul li {
+    font-family: Montserrat;
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+    color: blueviolet;
+    list-style: none;
+    padding-bottom: 10px;
+}
+
+nav ul img {
+    width: 300px;
+    border-radius: 50%;
+    margin-bottom: -75px;
+}
+
+.PrimerTitulo {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.PrimerTitulo h1 {
+    font-size: 70px;
+    font-weight: 400;
+}
+
+.PrimerTitulo h4 {
+    font-size: 45px;
+    font-style: italic;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+h2 {
+    margin: 20px;
+    font-size: 35px;
+    font-weight: 300;
+    text-decoration: underline;
+}
+
+p {
+    margin: 20px;
+    font-weight: 400;
+}
+
+#divTrabajarJuntos {
+    margin-top: 75px;
+    display: flex;
+}
+
