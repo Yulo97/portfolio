@@ -173,7 +173,7 @@ p {
 }
 
 #imgDibujoProgramando {
-    width: 600px;
+    width: 650px;
     border-radius: 10px;
 }
 
@@ -195,4 +195,9 @@ p {
     display: inline-block;
     margin: 25px;
     font-size: 20px;
+}
+
+.contenedorTecnologias ul li:hover {
+    font-size: 30px;
+    cursor: pointer;
 }
