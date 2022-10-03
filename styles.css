@@ -179,7 +179,7 @@ p {
 
 /* Estilos Tecnologias */
 
-#titularTecnologias {
+.titularesPaginas {
     text-align: center;
     margin-top: 100px;
     margin-bottom: 80px;
@@ -200,4 +200,56 @@ p {
 .contenedorTecnologias ul li:hover {
     font-size: 30px;
     cursor: pointer;
+}
+
+
+/* icono WhatsApp */
+
+.contenedorIconoWP {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+}
+
+.iconoWP {
+    color: #59C9A5;
+    border-radius: 40%;
+    font-size: 60px;
+}
+
+.iconoWP:hover {
+    color: #84D7BD;
+}
+
+/* Proyectos  */
+
+.proyectos {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+
+.proyectos div img {
+    border-radius: 25px;
+    width: 550px;
+}
+
+.proyectos div img:hover{
+    width: 565px;
+    /* poner algun efecto mejor */
+}
+
+#videoCualquiera {
+    text-align: center;
+}
+
+#videoCualquiera h5 {
+    font-size: 25px;
+    font-family: Montserrat;
+    font-weight: 400;
+    margin-bottom: 25px;
+    color: #59C9A5;
 }
