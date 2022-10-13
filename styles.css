@@ -1,12 +1,12 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
- /* Iconos Header  */
+/* Iconos Header  */
 
 header {
-background-color:#191d32;
+    background-color: #191d32;
 }
 
 html {
@@ -19,6 +19,7 @@ html {
     display: flex;
     padding-top: 20px;
 }
+
 .logos a {
     color: #9368B7;
     font-size: 100px;
@@ -28,143 +29,185 @@ html {
     z-index: 1;
 }
 
-.logos a:hover{
+.logos a:hover {
     color: #A683C3;
     transform: scale(1.1);
 }
 
-nav ul{
-    display: flex;
-    align-items: flex-end;
-}
-
-nav ul li, nav ul li a{
-    font-family: Montserrat;
-    font-size: 30px;
-    font-weight: 500;
-    text-transform: uppercase;
-    width: 100%;
-    text-align: center;
-    color: #59C9A5;
+.contenedor-btn {
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: repeat(5, 1fr);
     list-style: none;
-    padding-bottom: 25px;
-    text-decoration: none;
+    justify-items: center;
+    align-items: end;
 }
 
-
-/* Estilos Nav */
-nav ul li {
-    z-index: 1;
-    transition: all 0.5s;
-}
-
-nav ul li:hover{
-    transform: scale(1.05);
-}
-
-
-
-nav ul li a {
-    border: 3px solid;
-    border-radius: 10px;
-    padding: 10px;
-    transition: all 0.5s;
-}
-
-nav ul li a:hover {
-    color: #84D7BD;
-}
-
-nav ul li img {
-    width: 300px;
-    border: 5px solid #59C9A5;
-    border-radius: 50%;
-    margin-bottom: -75px;
+.boton {
+    font-family: Montserrat;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 250px;
+    height: 50px;
+    color: #fff;
+    font-size: 20px;
     background-color: #59C9A5;
+    transition: all ease 0.3s;
+    border-radius: 5px;
+    position: relative;
+    border: 0px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    text-decoration: none;
+    z-index: 2;
+}
+
+.boton span {
+    position: relative;
+    z-index: 3;
+    transition: .3s ease all;
+}
+
+.efecto-btn::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #9368B7;
+    position: absolute;
     z-index: 1;
-    transition: all 0.5s;
+    top: -50px;
+    left: 0;
+    transition: .3s ease-in-out all;
+}
+
+.efecto-btn:hover::after {
+    top: 0;
+}
+
+/* imagen perfil animacion */
+
+.btn{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    background-color: #84D7BD;
+    color: #fff;
+    position: relative;
+    border: 5px solid #84D7BD;
+    transition: all .5s;
+    border-radius: 50%;
+    overflow: hidden;
+    padding-bottom: -50px;
+    z-index: 1;
+    bottom: -50px;
+}
+
+.efect::after {
+    content: "";
+    background-color: #9368B7;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -300px;
+    right: 0;
+    transition: all .6s;
 
 }
 
-nav ul li img:hover {
-    border-color: #84D7BD;
-    background-color: #84D7BD;
+.btn span{
+    position: relative;
+    z-index: 2;
+}
+
+.btn span img {
+    width: 105%;
+}
+
+
+.efect:hover::after{
+    top: 0;
 }
 
 /* adornos tecnologias Header */
 
-.contenedor-word {
-    background-color: #59C9A5;
-}
-
-.word{
-    font-size: 25px;
+.word {
     position: absolute;
+    font-size: 25px;
     z-index: 0;
     animation: word 15s linear infinite;
     opacity: .5;
-
-}
-
+}   
 
 @keyframes word {
-    0%{
+    0% {
         left: 10%;
     }
-    50%{
+
+    50% {
         left: 90%;
         transform: rotate(25deg);
     }
 
-    100%{
+    100% {
         left: 10%;
     }
 }
 
-.word:nth-child(1){
+.word:nth-child(1) {
     top: 3%;
     animation-duration: 10s;
 }
 
-.word:nth-child(2){
+.word:nth-child(2) {
     top: 8%;
     animation-duration: 9s;
 }
 
-.word:nth-child(3){
+.word:nth-child(3) {
     top: 13%;
     animation-duration: 12s;
 }
 
-.word:nth-child(4){
+.word:nth-child(4) {
     top: 18%;
     animation-duration: 13s;
 }
 
-.word:nth-child(5){
+.word:nth-child(5) {
     top: 23%;
     animation-duration: 11s;
 }
 
-.word:nth-child(6){
+.word:nth-child(6) {
     top: 28%;
     animation-duration: 14s;
 }
 
-.word:nth-child(7){
+.word:nth-child(7) {
     top: 33%;
     animation-duration: 9.5s;
+}
+
+.word:nth-child(8) {
+    top: 38%;
+    animation-duration: 8.5s;
 }
 
 
 /* Estilos de Tarjetas de Seccion Certificados */
 
-.divTarjetas{
+.divTarjetas {
     display: flex;
     margin: 60px 100px 0 100px;
 }
 
-.tarjetasCetificados{
+.tarjetasCetificados {
     background-color: #151829;
     padding: 50px;
     border-radius: 10px;
@@ -187,7 +230,7 @@ nav ul li img:hover {
     font-weight: 300;
 }
 
-.botonRemarcado{
+.botonRemarcado {
     font-family: Montserrat;
     font-size: 28px;
     font-weight: 500;
@@ -250,7 +293,7 @@ p {
     padding: 20px;
 }
 
-.divTextoTrabajarJuntos p{
+.divTextoTrabajarJuntos p {
     text-align: justify;
 }
 
@@ -273,7 +316,7 @@ p {
     justify-content: center;
 }
 
-.contenedorTecnologias ul li{
+.contenedorTecnologias ul li {
     display: inline-block;
     margin: 25px;
     font-size: 20px;
@@ -295,8 +338,8 @@ p {
 
 .iconoWP {
     color: #59C9A5;
-    border-radius: 40%;
     font-size: 60px;
+    transition: all .5s;
 }
 
 .iconoWP:hover {
@@ -308,7 +351,7 @@ p {
 .proyectos {
     display: flex;
     flex-direction: row;
-    justify-content:space-around;
+    justify-content: space-around;
     margin-bottom: 50px;
     flex-wrap: wrap;
 }
@@ -319,7 +362,7 @@ p {
     width: 550px;
 }
 
-.proyectos div img:hover{
+.proyectos div img:hover {
     width: 565px;
     /* poner algun efecto mejor */
 }
