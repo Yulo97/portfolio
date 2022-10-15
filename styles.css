@@ -3,6 +3,7 @@
     padding: 0;
 }
 
+
 /* Iconos Header  */
 
 header {
@@ -117,7 +118,6 @@ html {
     top: -300px;
     right: 0;
     transition: all .6s;
-
 }
 
 .btn span{
@@ -128,7 +128,6 @@ html {
 .btn span img {
     width: 105%;
 }
-
 
 .efect:hover::after{
     top: 0;
@@ -203,8 +202,9 @@ html {
 /* Estilos de Tarjetas de Seccion Certificados */
 
 .divTarjetas {
-    display: flex;
-    margin: 60px 100px 0 100px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    flex-wrap: wrap;
 }
 
 .tarjetasCetificados {
@@ -212,7 +212,6 @@ html {
     padding: 50px;
     border-radius: 10px;
     margin: 25px;
-    width: 25%;
     text-align: center;
 }
 
@@ -250,8 +249,6 @@ html {
     cursor: pointer;
 }
 
-
-
 /* Index Presentacion */
 
 .titularIndexPortfolio {
@@ -261,7 +258,7 @@ html {
 }
 
 .titularIndexPortfolio h1 {
-    font-size: 110px;
+    font-size: 15vh;
     font-weight: 400;
 }
 
@@ -319,11 +316,12 @@ p {
 .contenedorTecnologias ul li {
     display: inline-block;
     margin: 25px;
-    font-size: 20px;
+    font-size: 25px;
+    transition: 1s all;
 }
 
 .contenedorTecnologias ul li:hover {
-    font-size: 30px;
+    transform: translateY(-10px);
     cursor: pointer;
 }
 
@@ -359,12 +357,14 @@ p {
 
 .proyectos div img {
     border-radius: 25px;
-    width: 550px;
+    width: 500px;
+    transition: 1s all;
+
 }
 
 .proyectos div img:hover {
-    width: 565px;
-    /* poner algun efecto mejor */
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 #videoCualquiera {
@@ -377,4 +377,89 @@ p {
     font-weight: 400;
     margin-bottom: 25px;
     color: #59C9A5;
+}
+
+@media screen and (max-width:500px) {
+    .contenedor-btn{
+        display: grid;
+        flex-direction: row;
+        grid-template-columns: 1fr;
+    }
+
+    .contenedor-btn li:nth-child(3){
+        order: -1;
+        padding-bottom: 0;
+        bottom: 0;
+    }
+
+    .logos a{
+    font-size: 50px;
+    }
+
+    .titularIndexPortfolio{
+        margin-top: 20px;
+    }
+
+    .titularIndexPortfolio h1 {
+    font-size: 5vh;
+    }
+
+    .titularIndexPortfolio h4{
+        font-size: 4vh;
+    }
+
+    .contenedor-word{
+        display: none;
+    }
+
+    .iconoWP{
+        display: none;
+    }
+
+    .divTarjetas{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .tarjetasCetificados {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .titularesPaginas{
+        margin: 20px 10px;
+    }
+
+    .contenedorIconoWP{
+        flex-wrap: wrap;
+        text-align: justify;
+    }
+
+    #divTrabajarJuntos{
+        margin: 0px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .divTextoTrabajarJuntos{
+        padding: 10px;
+    }
+
+    #imgDibujoProgramando {
+        width: 300px;
+    }
+
+    .btn{
+        background-color: #9368B7;
+    }
+
+    .contenedorTecnologias ul li {
+        margin: 10px;
+        font-size: 20px;
+    }
+
+    .contenedorTecnologias{
+        margin: 25px 15px;
+    }
+
 }
