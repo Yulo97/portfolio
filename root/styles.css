@@ -387,7 +387,7 @@ p {
     color: #59C9A5;
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:1200px) {
     .contenedor-btn{
         display: grid;
         flex-direction: row;
@@ -436,6 +436,7 @@ p {
 
     .titularesPaginas{
         margin: 20px 10px;
+        font-size: 5vh;
     }
 
     .contenedorIconoWP{
